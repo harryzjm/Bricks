@@ -31,6 +31,10 @@ public extension UIView {
     }
     
     public func make(space: CGFloat, axis: UILayoutConstraintAxis, margin: Bool = false, views: UIView ...) {
+        make(space: space, axis: axis, margin: margin, views: views)
+    }
+    
+    public func make(space: CGFloat, axis: UILayoutConstraintAxis, margin: Bool = false, views: [UIView]) {
         views.forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             addSubview($0)
@@ -68,6 +72,10 @@ public extension UIView {
     }
     
     public func make(length: CGFloat, axis: UILayoutConstraintAxis, margin: Bool = false, views: UIView ...) {
+        make(length: length, axis: axis, margin: margin, views: views)
+    }
+    
+    public func make(length: CGFloat, axis: UILayoutConstraintAxis, margin: Bool = false, views: [UIView]) {
         views.forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             addSubview($0)
