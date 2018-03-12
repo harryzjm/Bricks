@@ -20,6 +20,8 @@ class ViewController: UIViewController {
         let container3 = UIView()
         let container4 = UIView()
         
+        container1.compression(for: .all)
+        
         view.make(space: 0, axis: .vertical, margin: true, views: container1, container2, container3, container4)
         
         container1.make(length: 20, axis: .horizontal, margin: true, views: newView(), newView(), newView(), newView())

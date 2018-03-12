@@ -11,13 +11,15 @@
 		304CFAC820526418002F0FBB /* Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CFAC720526418002F0FBB /* Brick.swift */; };
 		304CFACA20526459002F0FBB /* Brick+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CFAC920526459002F0FBB /* Brick+Ext.swift */; };
 		304CFACC2052648F002F0FBB /* Sequence+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CFACB2052648F002F0FBB /* Sequence+Ext.swift */; };
-		304CFACE205264C3002F0FBB /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CFACD205264C3002F0FBB /* UIView+Ext.swift */; };
+		304CFACE205264C3002F0FBB /* UIView+Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CFACD205264C3002F0FBB /* UIView+Subview.swift */; };
 		304CFAD020526513002F0FBB /* NSLayoutAnchor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CFACF20526513002F0FBB /* NSLayoutAnchor+Ext.swift */; };
-		304CFAD1205265E0002F0FBB /* UIView+Ext.swift in Headers */ = {isa = PBXBuildFile; fileRef = 304CFACD205264C3002F0FBB /* UIView+Ext.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		304CFAD2205265E0002F0FBB /* Brick.swift in Headers */ = {isa = PBXBuildFile; fileRef = 304CFAC720526418002F0FBB /* Brick.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		304CFAD3205265E0002F0FBB /* Brick+Ext.swift in Headers */ = {isa = PBXBuildFile; fileRef = 304CFAC920526459002F0FBB /* Brick+Ext.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		304CFAD1205265E0002F0FBB /* UIView+Subview.swift in Headers */ = {isa = PBXBuildFile; fileRef = 304CFACD205264C3002F0FBB /* UIView+Subview.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		304CFAD2205265E0002F0FBB /* Brick.swift in Headers */ = {isa = PBXBuildFile; fileRef = 304CFAC720526418002F0FBB /* Brick.swift */; settings = {ATTRIBUTES = (Private, ); }; };
+		304CFAD3205265E0002F0FBB /* Brick+Ext.swift in Headers */ = {isa = PBXBuildFile; fileRef = 304CFAC920526459002F0FBB /* Brick+Ext.swift */; settings = {ATTRIBUTES = (Private, ); }; };
 		304CFAD4205265E8002F0FBB /* NSLayoutAnchor+Ext.swift in Headers */ = {isa = PBXBuildFile; fileRef = 304CFACF20526513002F0FBB /* NSLayoutAnchor+Ext.swift */; settings = {ATTRIBUTES = (Private, ); }; };
 		304CFAD5205265E8002F0FBB /* Sequence+Ext.swift in Headers */ = {isa = PBXBuildFile; fileRef = 304CFACB2052648F002F0FBB /* Sequence+Ext.swift */; settings = {ATTRIBUTES = (Private, ); }; };
+		30817C842056555E00683646 /* UIView+Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30817C832056555E00683646 /* UIView+Edge.swift */; };
+		30817C86205655CD00683646 /* UIView+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30817C85205655CD00683646 /* UIView+Compression.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +29,10 @@
 		304CFAC720526418002F0FBB /* Brick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brick.swift; sourceTree = "<group>"; };
 		304CFAC920526459002F0FBB /* Brick+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Brick+Ext.swift"; sourceTree = "<group>"; };
 		304CFACB2052648F002F0FBB /* Sequence+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Ext.swift"; sourceTree = "<group>"; };
-		304CFACD205264C3002F0FBB /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		304CFACD205264C3002F0FBB /* UIView+Subview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Subview.swift"; sourceTree = "<group>"; };
 		304CFACF20526513002F0FBB /* NSLayoutAnchor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutAnchor+Ext.swift"; sourceTree = "<group>"; };
+		30817C832056555E00683646 /* UIView+Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Edge.swift"; sourceTree = "<group>"; };
+		30817C85205655CD00683646 /* UIView+Compression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Compression.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				304CFA98205261C8002F0FBB /* bricks.h */,
-				304CFACD205264C3002F0FBB /* UIView+Ext.swift */,
+				304CFACD205264C3002F0FBB /* UIView+Subview.swift */,
+				30817C85205655CD00683646 /* UIView+Compression.swift */,
+				30817C832056555E00683646 /* UIView+Edge.swift */,
 				304CFAC720526418002F0FBB /* Brick.swift */,
 				304CFAC920526459002F0FBB /* Brick+Ext.swift */,
 				304CFACF20526513002F0FBB /* NSLayoutAnchor+Ext.swift */,
@@ -79,10 +85,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				304CFAD1205265E0002F0FBB /* UIView+Ext.swift in Headers */,
+				304CFAD1205265E0002F0FBB /* UIView+Subview.swift in Headers */,
+				304CFA9A205261C8002F0FBB /* bricks.h in Headers */,
 				304CFAD2205265E0002F0FBB /* Brick.swift in Headers */,
 				304CFAD3205265E0002F0FBB /* Brick+Ext.swift in Headers */,
-				304CFA9A205261C8002F0FBB /* bricks.h in Headers */,
 				304CFAD4205265E8002F0FBB /* NSLayoutAnchor+Ext.swift in Headers */,
 				304CFAD5205265E8002F0FBB /* Sequence+Ext.swift in Headers */,
 			);
@@ -157,11 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				304CFACE205264C3002F0FBB /* UIView+Ext.swift in Sources */,
+				304CFACE205264C3002F0FBB /* UIView+Subview.swift in Sources */,
 				304CFAD020526513002F0FBB /* NSLayoutAnchor+Ext.swift in Sources */,
 				304CFAC820526418002F0FBB /* Brick.swift in Sources */,
+				30817C842056555E00683646 /* UIView+Edge.swift in Sources */,
 				304CFACC2052648F002F0FBB /* Sequence+Ext.swift in Sources */,
 				304CFACA20526459002F0FBB /* Brick+Ext.swift in Sources */,
+				30817C86205655CD00683646 /* UIView+Compression.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

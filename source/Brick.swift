@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol Brick: class {
+protocol Brick: class {
     var leftAnchor: NSLayoutXAxisAnchor { get }
     var rightAnchor: NSLayoutXAxisAnchor { get }
     var topAnchor: NSLayoutYAxisAnchor { get }
@@ -19,10 +19,10 @@ public protocol Brick: class {
 
 extension UIView: Brick {}
 extension UILayoutGuide: Brick {
-    public var translatesAutoresizingMaskIntoConstraints: Bool {
+    var translatesAutoresizingMaskIntoConstraints: Bool {
         get { return false }
         set {}
     }
     
-    public func isDescendant(of view: UILayoutGuide) -> Bool { return false }
+    func isDescendant(of view: UILayoutGuide) -> Bool { return false }
 }
