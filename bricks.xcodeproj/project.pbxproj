@@ -18,6 +18,7 @@
 		304CFAD3205265E0002F0FBB /* Brick+Ext.swift in Headers */ = {isa = PBXBuildFile; fileRef = 304CFAC920526459002F0FBB /* Brick+Ext.swift */; settings = {ATTRIBUTES = (Private, ); }; };
 		304CFAD4205265E8002F0FBB /* NSLayoutAnchor+Ext.swift in Headers */ = {isa = PBXBuildFile; fileRef = 304CFACF20526513002F0FBB /* NSLayoutAnchor+Ext.swift */; settings = {ATTRIBUTES = (Private, ); }; };
 		304CFAD5205265E8002F0FBB /* Sequence+Ext.swift in Headers */ = {isa = PBXBuildFile; fileRef = 304CFACB2052648F002F0FBB /* Sequence+Ext.swift */; settings = {ATTRIBUTES = (Private, ); }; };
+		305AF06F2058BEA3003FC1C6 /* UIView+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305AF06E2058BEA3003FC1C6 /* UIView+Position.swift */; };
 		30817C842056555E00683646 /* UIView+Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30817C832056555E00683646 /* UIView+Edge.swift */; };
 		30817C86205655CD00683646 /* UIView+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30817C85205655CD00683646 /* UIView+Compression.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,7 @@
 		304CFACB2052648F002F0FBB /* Sequence+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Ext.swift"; sourceTree = "<group>"; };
 		304CFACD205264C3002F0FBB /* UIView+Subview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Subview.swift"; sourceTree = "<group>"; };
 		304CFACF20526513002F0FBB /* NSLayoutAnchor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutAnchor+Ext.swift"; sourceTree = "<group>"; };
+		305AF06E2058BEA3003FC1C6 /* UIView+Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Position.swift"; sourceTree = "<group>"; };
 		30817C832056555E00683646 /* UIView+Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Edge.swift"; sourceTree = "<group>"; };
 		30817C85205655CD00683646 /* UIView+Compression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Compression.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				304CFA98205261C8002F0FBB /* bricks.h */,
+				305AF06E2058BEA3003FC1C6 /* UIView+Position.swift */,
 				304CFACD205264C3002F0FBB /* UIView+Subview.swift */,
 				30817C85205655CD00683646 /* UIView+Compression.swift */,
 				30817C832056555E00683646 /* UIView+Edge.swift */,
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				304CFACE205264C3002F0FBB /* UIView+Subview.swift in Sources */,
+				305AF06F2058BEA3003FC1C6 /* UIView+Position.swift in Sources */,
 				304CFAD020526513002F0FBB /* NSLayoutAnchor+Ext.swift in Sources */,
 				304CFAC820526418002F0FBB /* Brick.swift in Sources */,
 				30817C842056555E00683646 /* UIView+Edge.swift in Sources */,
