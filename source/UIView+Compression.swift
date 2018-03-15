@@ -34,11 +34,11 @@ public extension UIView {
     @discardableResult
     public func compression(for axis: Axis = .all) -> Self {
         if axis.contains(.horizontal) {
-            setContentCompressionResistancePriority(UILayoutPriority.required, for: .horizontal)
+            setContentCompressionResistancePriority(.required, for: .horizontal)
         }
         
         if axis.contains(.vertical) {
-            setContentCompressionResistancePriority(UILayoutPriority.required, for: .vertical)
+            setContentCompressionResistancePriority(.required, for: .vertical)
         }
         return self
     }
@@ -54,11 +54,11 @@ public extension UIView {
     public static func compression(for axis: Axis = .all) -> Self {
         let v = self.init()
         if axis.contains(.horizontal) {
-            v.setContentCompressionResistancePriority(UILayoutPriority.required, for: .horizontal)
+            v.setContentCompressionResistancePriority(.required, for: .horizontal)
         }
         
         if axis.contains(.vertical) {
-            v.setContentCompressionResistancePriority(UILayoutPriority.required, for: .vertical)
+            v.setContentCompressionResistancePriority(.required, for: .vertical)
         }
         return v
     }
