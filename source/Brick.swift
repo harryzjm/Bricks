@@ -23,6 +23,6 @@ extension UILayoutGuide: Brick {
         get { return false }
         set {}
     }
-    
+
     func isDescendant(of view: UILayoutGuide) -> Bool { return false }
 }

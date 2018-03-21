@@ -8,13 +8,12 @@
 
 import Foundation
 
-
 extension Brick {
     func between<T: Brick>(first: T?, second: T?, axis: UILayoutConstraintAxis, offset: CGFloat = 0) {
         guard let first = first, let second = second else { return }
         first.translatesAutoresizingMaskIntoConstraints = false
         second.translatesAutoresizingMaskIntoConstraints = false
-        
+
         if first.isDescendant(of: second) {
             switch axis {
             case .horizontal:

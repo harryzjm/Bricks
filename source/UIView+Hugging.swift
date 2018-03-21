@@ -14,38 +14,38 @@ public extension UIView {
     public func huggingVertical() -> Self {
         return hugging(for: .vertical)
     }
-    
+
     @discardableResult
     public func huggingHorizontal() -> Self {
         return hugging(for: .horizontal)
     }
-    
+
     @discardableResult
     public func hugging(for axis: Axis = .all) -> Self {
         if axis.contains(.horizontal) {
             setContentHuggingPriority(.required, for: .horizontal)
         }
-        
+
         if axis.contains(.vertical) {
             setContentHuggingPriority(.required, for: .vertical)
         }
         return self
     }
-    
+
     public static func huggingVertical() -> Self {
         return hugging(for: .vertical)
     }
-    
+
     public static func huggingHorizontal() -> Self {
         return hugging(for: .horizontal)
     }
-    
+
     public static func hugging(for axis: Axis = .all) -> Self {
         let v = self.init()
         if axis.contains(.horizontal) {
             v.setContentHuggingPriority(.required, for: .horizontal)
         }
-        
+
         if axis.contains(.vertical) {
             v.setContentHuggingPriority(.required, for: .vertical)
         }
