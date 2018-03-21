@@ -11,7 +11,7 @@ import UIKit
 
 public extension UIView {
     public func make(space: CGFloat, axis: UILayoutConstraintAxis, margin: Bool = false, fill: Bool = true, views: UIView ...) {
-        make(space: space, axis: axis, margin: margin, views: views)
+        make(space: space, axis: axis, margin: margin, fill: fill, views: views)
     }
 
     public func make(space: CGFloat, axis: UILayoutConstraintAxis, margin: Bool = false, fill: Bool = true, views: [UIView]) {
@@ -59,7 +59,7 @@ public extension UIView {
     }
 
     public func make(length: CGFloat, axis: UILayoutConstraintAxis, margin: Bool = false, fill: Bool = true, views: UIView ...) {
-        make(length: length, axis: axis, margin: margin, views: views)
+        make(length: length, axis: axis, margin: margin, fill: fill, views: views)
     }
 
     public func make(length: CGFloat, axis: UILayoutConstraintAxis, margin: Bool = false, fill: Bool = true, views: [UIView]) {
