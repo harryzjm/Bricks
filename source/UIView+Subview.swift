@@ -10,6 +10,24 @@ import Foundation
 import UIKit
 
 public extension UIView {
+    public func constraint(formats: String, metrics: [String: Any]? = nil, _ views: UIView ...) {
+        var viewArr: [String: Any] = [:]
+        views.enumerated().forEach { (index, v) in
+            v.translatesAutoresizingMaskIntoConstraints = false
+            viewArr["v\(index + 1)"] = v
+        }
+        
+        formats.replacingOccurrences(of: " ", with: "")
+            .components(separatedBy: ",")
+            .map {
+                NSLayoutConstraint.constraints(withVisualFormat: $0,
+                                               options: NSLayoutFormatOptions(),
+                                               metrics: metrics,
+                                               views: viewArr)
+            }
+            .forEach { NSLayoutConstraint.activate($0) }
+    }
+    
     public func make(space: CGFloat, axis: UILayoutConstraintAxis, margin: Bool = false, fill: Bool = true, views: UIView ...) {
         make(space: space, axis: axis, margin: margin, fill: fill, views: views)
     }
