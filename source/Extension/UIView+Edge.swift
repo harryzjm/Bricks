@@ -12,7 +12,7 @@ import UIKit
 public extension UIView {
     public func edges(superView: UIView? = nil, horizontal: CGFloat? = nil, vertical: CGFloat? = nil) {
         guard let superV = superView ?? superview else { return }
-        superView?.addSubview(self)
+        if superview == nil { superV.addSubview(self) }
         translatesAutoresizingMaskIntoConstraints = false
         superV.translatesAutoresizingMaskIntoConstraints = false
 

@@ -42,6 +42,18 @@ public extension UIView {
         }
         return self
     }
+    
+    public func setCompression(_ priority: Float, for axis: Axis) {
+        let value = UILayoutPriority(priority)
+        
+        if axis.contains(.horizontal) {
+            setContentCompressionResistancePriority(value, for: .horizontal)
+        }
+        
+        if axis.contains(.vertical) {
+            setContentCompressionResistancePriority(value, for: .vertical)
+        }
+    }
 
     public static func compressionVertical() -> Self {
         return compression(for: .vertical)

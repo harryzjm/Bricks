@@ -31,6 +31,18 @@ public extension UIView {
         }
         return self
     }
+    
+    public func setHugging(_ priority: Float, for axis: Axis) {
+        let value = UILayoutPriority(priority)
+        
+        if axis.contains(.horizontal) {
+            setContentHuggingPriority(value, for: .horizontal)
+        }
+        
+        if axis.contains(.vertical) {
+            setContentHuggingPriority(value, for: .vertical)
+        }
+    }
 
     public static func huggingVertical() -> Self {
         return hugging(for: .vertical)
