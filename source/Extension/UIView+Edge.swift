@@ -10,9 +10,8 @@ import Foundation
 import UIKit
 
 public extension UIView {
-    public func edges(superView: UIView? = nil, horizontal: CGFloat? = nil, vertical: CGFloat? = nil) {
-        guard let superV = superView ?? superview else { return }
-        if superview == nil { superV.addSubview(self) }
+    public func edges(horizontal: CGFloat? = nil, vertical: CGFloat? = nil) {
+        guard let superV = superview else { return }
         translatesAutoresizingMaskIntoConstraints = false
         superV.translatesAutoresizingMaskIntoConstraints = false
 
@@ -26,7 +25,7 @@ public extension UIView {
         }
     }
 
-    public func edges(superView: UIView? = nil, value: CGFloat) {
-        edges(superView: superView, horizontal: value, vertical: value)
+    public func edges(value: CGFloat) {
+        edges(horizontal: value, vertical: value)
     }
 }

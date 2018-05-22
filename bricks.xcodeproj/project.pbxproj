@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302051A820B4091000287903 /* UIView+Fit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302051A720B4091000287903 /* UIView+Fit.swift */; };
+		302051AB20B40B2D00287903 /* UIView+Fit.swift in Headers */ = {isa = PBXBuildFile; fileRef = 302051A720B4091000287903 /* UIView+Fit.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		302051AD20B40B3900287903 /* UIView+Edge.swift in Headers */ = {isa = PBXBuildFile; fileRef = 30817C832056555E00683646 /* UIView+Edge.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		302051AE20B40B4A00287903 /* UIView+Compression.swift in Headers */ = {isa = PBXBuildFile; fileRef = 30817C85205655CD00683646 /* UIView+Compression.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		302051AF20B40B4A00287903 /* UIView+Hugging.swift in Headers */ = {isa = PBXBuildFile; fileRef = 305AF071205A472B003FC1C6 /* UIView+Hugging.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		302051B020B40B4A00287903 /* UIView+Frame.swift in Headers */ = {isa = PBXBuildFile; fileRef = 30767F4C2089D6A000C9C814 /* UIView+Frame.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		302051B120B40B6500287903 /* FallthroughView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 305D4558207DEA3A00DAE8B3 /* FallthroughView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		304CFA9A205261C8002F0FBB /* bricks.h in Headers */ = {isa = PBXBuildFile; fileRef = 304CFA98205261C8002F0FBB /* bricks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		304CFAC820526418002F0FBB /* Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CFAC720526418002F0FBB /* Brick.swift */; };
 		304CFACA20526459002F0FBB /* Brick+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CFAC920526459002F0FBB /* Brick+Ext.swift */; };
@@ -26,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		302051A720B4091000287903 /* UIView+Fit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Fit.swift"; sourceTree = "<group>"; };
 		304CFA8C2052612D002F0FBB /* bricks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = bricks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		304CFA98205261C8002F0FBB /* bricks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bricks.h; sourceTree = "<group>"; };
 		304CFA99205261C8002F0FBB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +106,7 @@
 				30817C85205655CD00683646 /* UIView+Compression.swift */,
 				305AF071205A472B003FC1C6 /* UIView+Hugging.swift */,
 				30817C832056555E00683646 /* UIView+Edge.swift */,
+				302051A720B4091000287903 /* UIView+Fit.swift */,
 				30767F4C2089D6A000C9C814 /* UIView+Frame.swift */,
 			);
 			path = Extension;
@@ -113,6 +122,12 @@
 				304CFA9A205261C8002F0FBB /* bricks.h in Headers */,
 				304CFAD2205265E0002F0FBB /* Brick.swift in Headers */,
 				304CFAD3205265E0002F0FBB /* Brick+Ext.swift in Headers */,
+				302051AB20B40B2D00287903 /* UIView+Fit.swift in Headers */,
+				302051AE20B40B4A00287903 /* UIView+Compression.swift in Headers */,
+				302051B120B40B6500287903 /* FallthroughView.swift in Headers */,
+				302051AF20B40B4A00287903 /* UIView+Hugging.swift in Headers */,
+				302051B020B40B4A00287903 /* UIView+Frame.swift in Headers */,
+				302051AD20B40B3900287903 /* UIView+Edge.swift in Headers */,
 				304CFAD1205265E0002F0FBB /* UIView+Subview.swift in Headers */,
 				304CFAD5205265E8002F0FBB /* Sequence+Ext.swift in Headers */,
 				304CFAD4205265E8002F0FBB /* NSLayoutAnchor+Ext.swift in Headers */,
@@ -190,6 +205,7 @@
 			files = (
 				304CFACE205264C3002F0FBB /* UIView+Subview.swift in Sources */,
 				305AF072205A472B003FC1C6 /* UIView+Hugging.swift in Sources */,
+				302051A820B4091000287903 /* UIView+Fit.swift in Sources */,
 				304CFAD020526513002F0FBB /* NSLayoutAnchor+Ext.swift in Sources */,
 				304CFAC820526418002F0FBB /* Brick.swift in Sources */,
 				30817C842056555E00683646 /* UIView+Edge.swift in Sources */,

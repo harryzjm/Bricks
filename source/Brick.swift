@@ -13,6 +13,10 @@ public protocol Brick: class {
     var rightAnchor: NSLayoutXAxisAnchor { get }
     var topAnchor: NSLayoutYAxisAnchor { get }
     var bottomAnchor: NSLayoutYAxisAnchor { get }
+    var widthAnchor: NSLayoutDimension { get }
+    var heightAnchor: NSLayoutDimension { get }
+    var centerXAnchor: NSLayoutXAxisAnchor { get }
+    var centerYAnchor: NSLayoutYAxisAnchor { get }
     var translatesAutoresizingMaskIntoConstraints: Bool { get set }
     func isDescendant(of view: Self) -> Bool
 }
