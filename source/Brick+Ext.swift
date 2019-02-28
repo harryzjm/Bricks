@@ -118,7 +118,7 @@ extension Brick {
         return self
     }
     
-    public func between<T: Brick>(first: T?, second: T?, axis: UILayoutConstraintAxis, offset: CGFloat = 0) {
+    public func between<T: Brick>(first: T?, second: T?, axis: NSLayoutConstraint.Axis, offset: CGFloat = 0) {
         guard let first = first, let second = second else { return }
         first.translatesAutoresizingMaskIntoConstraints = false
         second.translatesAutoresizingMaskIntoConstraints = false

@@ -21,18 +21,18 @@ public extension UIView {
             .components(separatedBy: ",")
             .map {
                 NSLayoutConstraint.constraints(withVisualFormat: $0,
-                                               options: NSLayoutFormatOptions(),
+                                               options: NSLayoutConstraint.FormatOptions(),
                                                metrics: metrics,
                                                views: viewArr)
             }
             .forEach { NSLayoutConstraint.activate($0) }
     }
     
-    public func make(space: CGFloat, axis: UILayoutConstraintAxis, margin: Bool = false, fill: Bool = true, views: UIView ...) {
+    public func make(space: CGFloat, axis: NSLayoutConstraint.Axis, margin: Bool = false, fill: Bool = true, views: UIView ...) {
         make(space: space, axis: axis, margin: margin, fill: fill, views: views)
     }
 
-    public func make(space: CGFloat, axis: UILayoutConstraintAxis, margin: Bool = false, fill: Bool = true, views: [UIView]) {
+    public func make(space: CGFloat, axis: NSLayoutConstraint.Axis, margin: Bool = false, fill: Bool = true, views: [UIView]) {
 
         views.forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
@@ -76,11 +76,11 @@ public extension UIView {
         }
     }
 
-    public func make(length: CGFloat, axis: UILayoutConstraintAxis, margin: Bool = false, fill: Bool = true, views: UIView ...) {
+    public func make(length: CGFloat, axis: NSLayoutConstraint.Axis, margin: Bool = false, fill: Bool = true, views: UIView ...) {
         make(length: length, axis: axis, margin: margin, fill: fill, views: views)
     }
 
-    public func make(length: CGFloat, axis: UILayoutConstraintAxis, margin: Bool = false, fill: Bool = true, views: [UIView]) {
+    public func make(length: CGFloat, axis: NSLayoutConstraint.Axis, margin: Bool = false, fill: Bool = true, views: [UIView]) {
         views.forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             addSubview($0)
