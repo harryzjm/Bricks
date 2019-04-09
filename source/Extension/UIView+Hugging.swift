@@ -11,17 +11,17 @@ import UIKit
 
 public extension UIView {
     @discardableResult
-    public func huggingVertical() -> Self {
+    func huggingVertical() -> Self {
         return hugging(for: .vertical)
     }
 
     @discardableResult
-    public func huggingHorizontal() -> Self {
+    func huggingHorizontal() -> Self {
         return hugging(for: .horizontal)
     }
 
     @discardableResult
-    public func hugging(for axis: Axis = .all) -> Self {
+    func hugging(for axis: Axis = .all) -> Self {
         if axis.contains(.horizontal) {
             setContentHuggingPriority(.required, for: .horizontal)
         }
@@ -32,7 +32,7 @@ public extension UIView {
         return self
     }
     
-    public func setHugging(_ priority: Float, for axis: Axis) {
+    func setHugging(_ priority: Float, for axis: Axis) {
         let value = UILayoutPriority(priority)
         
         if axis.contains(.horizontal) {
@@ -44,15 +44,15 @@ public extension UIView {
         }
     }
 
-    public static func huggingVertical() -> Self {
+    static func huggingVertical() -> Self {
         return hugging(for: .vertical)
     }
 
-    public static func huggingHorizontal() -> Self {
+    static func huggingHorizontal() -> Self {
         return hugging(for: .horizontal)
     }
 
-    public static func hugging(for axis: Axis = .all) -> Self {
+    static func hugging(for axis: Axis = .all) -> Self {
         let v = self.init()
         if axis.contains(.horizontal) {
             v.setContentHuggingPriority(.required, for: .horizontal)

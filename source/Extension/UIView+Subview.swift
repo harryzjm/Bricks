@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public extension UIView {
-    public func constraint(formats: String, metrics: [String: Any]? = nil, _ views: UIView ...) {
+    func constraint(formats: String, metrics: [String: Any]? = nil, _ views: UIView ...) {
         var viewArr: [String: Any] = [:]
         views.enumerated().forEach { (index, v) in
             v.translatesAutoresizingMaskIntoConstraints = false
@@ -28,11 +28,11 @@ public extension UIView {
             .forEach { NSLayoutConstraint.activate($0) }
     }
     
-    public func make(space: CGFloat, axis: NSLayoutConstraint.Axis, margin: Bool = false, fill: Bool = true, views: UIView ...) {
+    func make(space: CGFloat, axis: NSLayoutConstraint.Axis, margin: Bool = false, fill: Bool = true, views: UIView ...) {
         make(space: space, axis: axis, margin: margin, fill: fill, views: views)
     }
 
-    public func make(space: CGFloat, axis: NSLayoutConstraint.Axis, margin: Bool = false, fill: Bool = true, views: [UIView]) {
+    func make(space: CGFloat, axis: NSLayoutConstraint.Axis, margin: Bool = false, fill: Bool = true, views: [UIView]) {
 
         views.forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
@@ -47,6 +47,8 @@ public extension UIView {
             case .vertical:
                 view.leftAnchor.equalTo(leftAnchor)
                 view.rightAnchor.equalTo(rightAnchor)
+            @unknown default:
+                fatalError()
             }
         }
 
@@ -62,6 +64,8 @@ public extension UIView {
                 before.rightAnchor.equalTo(view.rightAnchor)
                 before.bottomAnchor.equalTo(view.topAnchor, constant: -space)
                 before.heightAnchor.equalTo(view.heightAnchor)
+            @unknown default:
+                fatalError()
             }
         }
 
@@ -73,14 +77,16 @@ public extension UIView {
         case .vertical:
             views.first?.topAnchor.equalTo(topAnchor, constant: value)
             views.last?.bottomAnchor.equalTo(bottomAnchor, constant: -value)
+        @unknown default:
+            fatalError()
         }
     }
 
-    public func make(length: CGFloat, axis: NSLayoutConstraint.Axis, margin: Bool = false, fill: Bool = true, views: UIView ...) {
+    func make(length: CGFloat, axis: NSLayoutConstraint.Axis, margin: Bool = false, fill: Bool = true, views: UIView ...) {
         make(length: length, axis: axis, margin: margin, fill: fill, views: views)
     }
 
-    public func make(length: CGFloat, axis: NSLayoutConstraint.Axis, margin: Bool = false, fill: Bool = true, views: [UIView]) {
+    func make(length: CGFloat, axis: NSLayoutConstraint.Axis, margin: Bool = false, fill: Bool = true, views: [UIView]) {
         views.forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             addSubview($0)
@@ -90,6 +96,8 @@ public extension UIView {
                 $0.widthAnchor.equalTo(length)
             case .vertical:
                 $0.heightAnchor.equalTo(length)
+            @unknown default:
+                fatalError()
             }
         }
 
@@ -110,6 +118,8 @@ public extension UIView {
             case .vertical:
                 view.leftAnchor.equalTo(leftAnchor)
                 view.rightAnchor.equalTo(rightAnchor)
+            @unknown default:
+                fatalError()
             }
         }
 
@@ -123,6 +133,8 @@ public extension UIView {
             case .vertical:
                 before.leftAnchor.equalTo(view.leftAnchor)
                 before.rightAnchor.equalTo(view.rightAnchor)
+            @unknown default:
+                fatalError()
             }
         }
 
@@ -137,6 +149,8 @@ public extension UIView {
             case .vertical:
                 views.first?.topAnchor.equalTo(topAnchor)
                 views.last?.bottomAnchor.equalTo(bottomAnchor)
+            @unknown default:
+                fatalError()
             }
         }
 
@@ -144,6 +158,8 @@ public extension UIView {
             switch axis {
             case .horizontal: before.widthAnchor.equalTo(guide.widthAnchor)
             case .vertical: before.heightAnchor.equalTo(guide.heightAnchor)
+            @unknown default:
+                fatalError()
             }
         }
     }

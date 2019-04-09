@@ -131,6 +131,8 @@ extension Brick {
             case .vertical:
                 first.bottomAnchor.equalTo(topAnchor, constant: -offset)
                 second.bottomAnchor.equalTo(bottomAnchor, constant: offset)
+            @unknown default:
+                fatalError()
             }
         } else if second.isDescendant(of: first) {
             switch axis {
@@ -140,6 +142,8 @@ extension Brick {
             case .vertical:
                 first.topAnchor.equalTo(topAnchor, constant: -offset)
                 second.topAnchor.equalTo(bottomAnchor, constant: offset)
+            @unknown default:
+                fatalError()
             }
         } else {
             switch axis {
@@ -149,6 +153,8 @@ extension Brick {
             case .vertical:
                 first.bottomAnchor.equalTo(topAnchor, constant: -offset)
                 second.topAnchor.equalTo(bottomAnchor, constant: offset)
+            @unknown default:
+                fatalError()
             }
         }
     }

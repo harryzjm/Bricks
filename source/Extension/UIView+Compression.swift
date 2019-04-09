@@ -22,17 +22,17 @@ public struct Axis: OptionSet {
 
 public extension UIView {
     @discardableResult
-    public func compressionVertical() -> Self {
+    func compressionVertical() -> Self {
         return compression(for: .vertical)
     }
 
     @discardableResult
-    public func compressionHorizontal() -> Self {
+    func compressionHorizontal() -> Self {
         return compression(for: .horizontal)
     }
 
     @discardableResult
-    public func compression(for axis: Axis = .all) -> Self {
+    func compression(for axis: Axis = .all) -> Self {
         if axis.contains(.horizontal) {
             setContentCompressionResistancePriority(.required, for: .horizontal)
         }
@@ -43,7 +43,7 @@ public extension UIView {
         return self
     }
     
-    public func setCompression(_ priority: Float, for axis: Axis) {
+    func setCompression(_ priority: Float, for axis: Axis) {
         let value = UILayoutPriority(priority)
         
         if axis.contains(.horizontal) {
@@ -55,15 +55,15 @@ public extension UIView {
         }
     }
 
-    public static func compressionVertical() -> Self {
+    static func compressionVertical() -> Self {
         return compression(for: .vertical)
     }
 
-    public static func compressionHorizontal() -> Self {
+    static func compressionHorizontal() -> Self {
         return compression(for: .horizontal)
     }
 
-    public static func compression(for axis: Axis = .all) -> Self {
+    static func compression(for axis: Axis = .all) -> Self {
         let v = self.init()
         if axis.contains(.horizontal) {
             v.setContentCompressionResistancePriority(.required, for: .horizontal)

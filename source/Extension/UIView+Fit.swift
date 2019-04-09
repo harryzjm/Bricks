@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public extension UIView {
-    public func fit(top: UIView? = nil, left: UIView? = nil, bottom: UIView? = nil, right: UIView? = nil) {
+    func fit(top: UIView? = nil, left: UIView? = nil, bottom: UIView? = nil, right: UIView? = nil) {
         guard let superV = superview else { return }
         [superV, self, top, left, bottom, right].forEach {
             $0?.translatesAutoresizingMaskIntoConstraints = false
